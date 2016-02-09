@@ -146,23 +146,24 @@
 
   // PIE CHARTS
 
-  $(window).on("scroll", function(event) {
-    $('.chart:in-viewport').easyPieChart({
-      animate: 2000,
-      barColor: '#1080f2',
-      lineWidth: 3,
-      easing: 'easeOutBounce',
-      lineCap: 'square',
-      size: 230,
-      trackColor: false,
-      scaleColor: false,
-      animate: {
-        duration: 1500,
-        enabled: true
-      }
+  if ($('.chart').length > 0) {
+    $(window).on("scroll", function(event) {
+      $('.chart:in-viewport').easyPieChart({
+        animate: 2000,
+        barColor: '#1080f2',
+        lineWidth: 3,
+        easing: 'easeOutBounce',
+        lineCap: 'square',
+        size: 230,
+        trackColor: false,
+        scaleColor: false,
+        animate: {
+          duration: 1500,
+          enabled: true
+        }
+      });
     });
-  });
-
+  }
   //AUTO PLAY YOUTUBE VIDEO
 
   function autoPlayYouTubeModal() {
@@ -183,22 +184,23 @@
   autoPlayYouTubeModal();
 
   // TESTIMONIALS SLIDER
+  if($('.slider').length > 0) {
+    $("#testimonials .slider").owlCarousel({
+      navigation: true,
+      slideSpeed: 300,
+      paginationSpeed: 400,
+      singleItem: true
+    });
 
-  $("#testimonials .slider").owlCarousel({
-    navigation: true,
-    slideSpeed: 300,
-    paginationSpeed: 400,
-    singleItem: true
-  });
+    // CLIENTS SLIDER
 
-  // CLIENTS SLIDER
-
-  $("#clients .slider").owlCarousel({
-    navigation: true,
-    pagination: false,
-    autoPlay: 5000, //Set AutoPlay to 3 seconds
-    items: 5,
-  });
+    $("#clients .slider").owlCarousel({
+      navigation: true,
+      pagination: false,
+      autoPlay: 5000, //Set AutoPlay to 3 seconds
+      items: 5,
+    });
+  }
 
   // MAIN MENU TOGGLE AND SMOOTH SCROLL
 
