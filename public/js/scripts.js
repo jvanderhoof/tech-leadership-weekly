@@ -67,6 +67,8 @@
         cache: false,
         success: function() {
           $('#subscribe-success').removeClass('hidden');
+          var $emailElement = $('.subscribe-form').find('input#email');
+          $emailElement.val('');
         }
       });
     }
