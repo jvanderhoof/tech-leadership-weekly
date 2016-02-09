@@ -58,19 +58,17 @@
   $(".subscribe-form input").jqBootstrapValidation({
     preventSubmit: true,
     submitSuccess: function($form, event) {
+      var email = $form.find('#email').val();
       event.preventDefault(); // prevent default submit behaviour
       $.ajax({
+        type: "POST",
+        url: '/subscribe',
+        data: { email: email },
+        cache: false,
         success: function() {
-          $('#subscribe-success').html("<div class='alert alert-success'>");
-          $('#subscribe-success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-            .append("</button>");
-          $('#subscribe-success > .alert-success')
-            .append("<strong>Your message has been sent. </strong>");
-          $('#subscribe-success > .alert-success')
-            .append('</div>');
+          $('#subscribe-success').removeClass('hidden');
         }
-      })
-
+      });
     }
   });
 
