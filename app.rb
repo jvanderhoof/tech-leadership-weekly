@@ -4,6 +4,11 @@ class App < Sinatra::Base
     erb :home
   end
 
+  get '/faq' do
+    content_type 'html'
+    erb :faq
+  end
+
   post '/subscribe' do
     email = params['email']
     if email
