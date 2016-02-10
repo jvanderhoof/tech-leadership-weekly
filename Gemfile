@@ -6,5 +6,7 @@ ruby '2.3.0'
 gem 'sinatra'
 gem 'gibbon'
 gem 'dotenv'
-gem 'pry-byebug'
 
+group :development do
+  gem 'pry-byebug'
+end
