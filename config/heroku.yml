@@ -1,0 +1,11 @@
+production:
+  app:
+    name: my-heroku-app-name
+    git_branch: master
+  config_vars:
+  - BUILDPACK_URL: https://github.com/ddollar/heroku-buildpack-multi.git
+  addons: []
+  resources:
+    web:
+      count: 1
+      type: Free
