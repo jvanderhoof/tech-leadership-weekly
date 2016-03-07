@@ -1,0 +1,28 @@
+The Identity Management Method
+http://www.joelonsoftware.com/items/2006/08/10.html
+Joel Spolsky
+Read Time: 5 minutes (15 for all three posts)
+
+As Joel points out, there are a couple different approaches to management (I recommend reading the 'Command and Control Management', and 'Econ 101 Management' posts as well).  Although getting your team to intrinsically understand and embrace the goals of the organization is hard, it's the most effective approach to leading.
+
+
+This Product Prioritization System Nabbed Pandora 70 Million Monthly Users with Just 40 Engineers
+http://firstround.com/review/This-Product-Prioritization-System-Nabbed-Pandora-More-Than-70-Million-Active-Monthly-Users-with-Just-40-Engineers/
+First Round
+Read Time: 10 minutes
+
+The landscape around us changes quickly, especially for those organizations in the technical space.  This post provides a great perspective on how to prioritize opportunities, and how to act on those opportunities.
+Pandora offers an example of how to identify and act on the best opportunities.
+
+
+How to Deploy Software
+https://zachholman.com/posts/deploying-software
+Zach Holman
+Read Time: 20 minutes
+
+Maximizing the value of a development team means getting their work out and iterating as quickly and safely as possible.  Improving the deployment process can offer a high return on investment.  It results in better code, fewer production bugs, and lets a development team move faster.  This is a long post, but offers a ton of valuable considerations.  Unless releasing code is fantastically boring, your probably doing it wrong.
+
+
+
+
+
