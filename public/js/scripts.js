@@ -69,6 +69,7 @@
           $('#subscribe-success').removeClass('hidden');
           var $emailElement = $('.subscribe-form').find('input#email');
           $emailElement.val('');
+          ga('send', 'event', 'Homepage', 'Signup', 'Tech Leadership Weekly');
         }
       });
     }
